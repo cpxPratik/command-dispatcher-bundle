@@ -29,9 +29,9 @@ class JeckelLabCommandDispatcherBundle extends Bundle
     }
 
     /**
-     * @return CommandDispatcherExtension|ExtensionInterface|null
+     * @return ExtensionInterface|null
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
         return new CommandDispatcherExtension();
     }
